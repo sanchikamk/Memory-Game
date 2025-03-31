@@ -1,37 +1,38 @@
-# Memory-Game
+# Memory Card Game 🧠🃏
+A fun, classic card-matching game designed to challenge your memory!
 
-Memory Card Game 🧠🃏
-A classic card matching game to test your memory skills!
+# 🚀 Quick Start
+Download the project files.
 
-🚀 Quick Start
-Download the project files
+Open index.html in any modern web browser.
 
-Open index.html in any modern browser
+Start playing—no installation required!
 
-Start playing - no installation needed!
+# 🎮 How to Play
+Click on cards to flip them over.
 
-🎮 How to Play
-Click cards to flip them over
+Find matching pairs to win.
 
-Find two matching cards to make a pair
+Complete the game in the fewest moves possible!
 
-Match all pairs to win!
+# ⚙️ Game Features
+Tracks your moves and matched pairs.
 
-Try to complete the game in the fewest moves
+Smooth, animated card flips.
 
-⚙️ Game Features
-Tracks your moves and matches
+Restart button to start fresh.
 
-Smooth card flip animations
+Fully responsive—play on both mobile and desktop.
 
-Restart button for new games
+# 📁 Project Structure
+/assets — Contains card images.
 
-Works on mobile and desktop
+/data — Game data (cards.json).
 
-📁 Project Structure
-/assets      - Card images
-/data        - Game data (cards.json)
-index.html   - Main game file
-styles.css   - Game styling
-script.js    - Game logic
-Made with HTML, CSS, and JavaScript - no frameworks required!
+index.html — Main game file.
+
+styles.css — Game styling.
+
+script.js — Game logic.
+
+# Built with HTML, CSS, and JavaScript—no frameworks needed!
