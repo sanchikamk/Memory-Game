@@ -1,0 +1,129 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #12181f;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.restart-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.game-board {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(3, 140px);
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 800px;
+  perspective: 1000px;
+}
+
+.card {
+  height: 140px;
+  width: 140px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  /* background-color: #3498db; */
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+  /* background-size: cover; */
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.stats {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(2, 80px);
+    grid-template-rows: repeat(6, 80px);
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
